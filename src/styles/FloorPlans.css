@@ -1,0 +1,244 @@
+.floorplans-section {
+    position: relative;
+    background: linear-gradient(rgb(205, 156, 64) 60%, rgb(21, 138, 68) 40%);
+    padding: 4rem 0;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.decor-img {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 82px;
+    height: 125px;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    padding: 0 1rem;
+}
+
+.floorplans-header {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.fp-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.fp-subheading {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.fp-download {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.fp-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.fp-arrow {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.fp-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.fp-card {
+    background-color: transparent;
+    width: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fp-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.fp-info {
+    text-align: left;
+    padding-left: 1rem;
+    color: white;
+}
+
+.villatype {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.villaname {
+    margin: 0;
+    font-weight: 600;
+}
+
+.floorname,
+.builtuparea {
+    margin: 0.2rem 0;
+    font-weight: normal;
+}
+
+.builtuparea span {
+    font-weight: 200;
+}
+
+.floorplans-section {
+    position: relative;
+    background: linear-gradient(rgb(205, 156, 64) 60%, rgb(21, 138, 68) 40%);
+    padding: 4rem 0;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.decor-img {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 82px;
+    height: 125px;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    padding: 0 1rem;
+}
+
+.floorplans-header {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.fp-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.fp-subheading {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.fp-download {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: white;
+    color: #CD9C40;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.fp-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.fp-arrow {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+.fp-slider {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out;
+    /*now update*/
+    align-items: stretch;
+    gap: 2rem;
+}
+
+
+
+.fp-card {
+    background-color: transparent;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+
+
+.fp-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.fp-info {
+    text-align: left;
+    padding-left: 1rem;
+    color: white;
+}
+
+.villatype {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.villaname {
+    margin: 0;
+    font-weight: 600;
+}
+
+.floorname,
+.builtuparea {
+    margin: 0.2rem 0;
+}
+
+.builtuparea span {
+    font-weight: 200;
+}
