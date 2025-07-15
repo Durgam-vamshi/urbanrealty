@@ -1,99 +1,4 @@
-// import React from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Pagination } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "../styles/AmenitiesSection.css";
-
-// function AmenitiesSection() {
-//   const images = [
-//     "https://urbanranch.irarealty.in/_next/static/media/c1mv.0fb2d028.webp",
-//     "https://urbanranch.irarealty.in/_next/static/media/c1mv.0fb2d028.webp",
-//     "https://urbanranch.irarealty.in/_next/static/media/c1mv.0fb2d028.webp",
-//   ];
-
-//   return (
-//     <section className="amenities-section text-white">
-//       <div className="container px-3 px-md-5">
-//         <div className="d-flex flex-column mt-2 mb-5 flex-wrap justify-content-center align-items-center gap-4">
-//           {/* Left Column */}
-//           <div
-//             className="p-4"
-//             style={{
-//               flex: "1 1 45%",
-//               display: "flex",
-//               flexDirection: "column",
-//               alignItems: "flex-start",
-//               justifyContent: "center",
-//               borderRadius: "12px",
-//             }}
-//           >
-//             <span className="amenities-title mb-3">
-//               Community & Amenities
-//             </span>
-//             <h2 className="amenities-heading fw-bold mb-4">
-//               A Lifestyle that Breathes <br /> and Belongs
-//             </h2>
-
-//             <div className="amenities-category mb-3">
-//               <h5 className="category-title mb-2">
-//                 Social & Community Spaces
-//               </h5>
-//               <ul className="category-list ps-3">
-//                 <li>Grand Clubhouse, Banquet Hall, Guest Suites</li>
-//                 <li>Party Lawns, Amphitheater, Café‑style seating</li>
-//               </ul>
-//             </div>
-//           </div>
-
-//           {/* Right Column: Swiper Slider */}
-//           <div
-//             style={{
-//               flex: "1 1 45%",
-//               maxWidth: "400px",
-//               width: "100%",
-//               height: "100%",
-//             }}
-//           >
-//             <Swiper
-//               modules={[Pagination]}
-//               spaceBetween={10}
-//               slidesPerView={1}
-//               pagination={{ clickable: true }}
-//               className="swiper-amenities"
-//               style={{
-//                 borderRadius: "12px",
-//               }}
-//             >
-//               {images.map((src, index) => (
-//                 <SwiperSlide
-//                   key={index}
-//                   className="d-flex justify-content-center align-items-center swiperamenities"
-//                 >
-//                   <img
-//                     src={src}
-//                     alt={`Amenity Slide ${index + 1}`}
-//                     className="rounded img-fluid w-100"
-//                     style={{
-//                       height: "250px",
-//                       objectFit: "cover",
-//                     }}
-//                   />
-//                 </SwiperSlide>
-//               ))}
-//             </Swiper>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default AmenitiesSection;
-
-
-
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
@@ -101,81 +6,72 @@ import "swiper/css/pagination";
 import "../styles/AmenitiesSection.css";
 
 function AmenitiesSection() {
-  const images = [
-    "https://urbanranch.irarealty.in/_next/static/media/c1mv.0fb2d028.webp",
-    "https://urbanranch.irarealty.in/_next/static/media/c1mv.0fb2d028.webp",
-    "https://urbanranch.irarealty.in/_next/static/media/c1mv.0fb2d028.webp",
+  const imageData = [
+    {
+      src: "https://urbanranch.irarealty.in/_next/static/media/c1.57a705b5.webp",
+      title: "Social & Community Spaces",
+      features: [
+        "Grand Clubhouse, Banquet Hall, Guest Suites",
+        "Party Lawns, Amphitheater, Café‑style seating",
+      ],
+    },
+    {
+      src: "https://urbanranch.irarealty.in/_next/static/media/c1.57a705b5.webp",
+      title: "Health & Wellness",
+      features: ["Jogging Track, Meditation Zone", "Open Gym, Yoga Deck"],
+    },
+    {
+      src: "https://urbanranch.irarealty.in/_next/static/media/c1.57a705b5.webp",
+      title: "Leisure & Recreation",
+      features: [
+        "Swimming Pool, Kids' Play Area",
+        "Indoor Games, Reading Lounge",
+      ],
+    },
   ];
+
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <section className="amenities-section text-white">
-      <div className="container px-3 ">
-        <div className=" mt-2 mb-5  gap-4">
-          {/* Left Column */}
-          <div
-            className="p-4"
-            style={{
-         
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-start",
-              justifyContent: "center",
-              borderRadius: "12px",
-            }}
-          >
-            <span className="amenities-title mb-3">
-              Community & Amenities
-            </span>
+      <div className="container px-3">
+        <div className="row d-flex align-items-center">
+        
+          <div className="col-lg-6 p-4">
+            <span className="amenities-title mb-3">Community & Amenities</span>
             <h2 className="amenities-heading fw-bold mb-4">
               A Lifestyle that Breathes <br /> and Belongs
             </h2>
 
             <div className="amenities-category mb-3">
               <h5 className="category-title mb-2">
-                Social & Community Spaces
+                {imageData[activeIndex].title}
               </h5>
               <ul className="category-list ps-3">
-                <li>Grand Clubhouse, Banquet Hall, Guest Suites</li>
-                <li>Party Lawns, Amphitheater, Café‑style seating</li>
+                {imageData[activeIndex].features.map((feature, idx) => (
+                  <li key={idx}>{feature}</li>
+                ))}
               </ul>
             </div>
           </div>
 
-          {/* Right Column: Swiper Slider */}
-          <div
-            style={{
-             
-              maxWidth: "100%",
-              width: "100%",
-              height: "100%",
-            }}
-          >
+          <div className="col-lg-6 swiper-wrapper-container">
             <Swiper
               modules={[Pagination]}
-              spaceBetween={10}
-              slidesPerView={2.5}
-              centeredSlides={true}
+              spaceBetween={20}
+              slidesPerView={2.2}
+              centeredSlides={false}
               loop={true}
-              loopAdditionalSlides={images.length}
               pagination={{ clickable: true }}
+              onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
               className="swiper-amenities"
-              style={{ borderRadius: "12px" }}
             >
-              {images.map((src, index) => (
-                <SwiperSlide
-                  key={index}
-                  className="d-flex justify-content-center align-items-center swiperamenities w-100"
-                >
+              {imageData.map((image, index) => (
+                <SwiperSlide key={index} className="custom-slide">
                   <img
-                    src={src}
+                    src={image.src}
                     alt={`Amenity Slide ${index + 1}`}
-                    className=" img-fluid "
-                    style={{
-                      height: "170px",
-                      width:"250px",
-                      objectFit:"scale-down"
-                   
-                    }}
+                    className="swiper-image"
                   />
                 </SwiperSlide>
               ))}

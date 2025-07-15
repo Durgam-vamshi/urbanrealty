@@ -34,20 +34,22 @@
   margin-bottom: 1rem;
   color: #08232A;
   text-align: left;
-  /*  */
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: 500;
   padding-left: 0;
   margin-left: 0;
-
+  font-family: 'Cormorant serif';
 }
 
 .section-description {
-  font-size: 1.5rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.7;
   text-align: left;
-  color: #333;
+  word-spacing: 1px;
+  color: #73788c;
+  font-family: "Nunito Sans", sans-serif;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   max-width: 100%;
   word-wrap: break-word;
 }
@@ -69,13 +71,14 @@
 .Title {
   padding: 10px;
   color: #CD9C40;
-  font-size:1.2rem;
-  border-radius:5px;
+  font-size: 0.5rem;
+  border-radius: 5px;
   text-align: left;
   margin-left: 1.5rem;
-  background-color:#F8F9FE;
-  width:250px;
-
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #F8F9FE;
+  width: 250px;
+font-weight:lighter;
 }
 
 .title-container {
@@ -91,9 +94,10 @@
     line-height: 1.5;
     text-align: left;
   }
-  .section-heading{
-    font-weigth:bold;
-    font-size:18px;
+
+  .section-heading {
+    font-weight: bold;
+    font-size: 18px;
   }
 
 
@@ -104,8 +108,8 @@
     /* margin-top: 1.5rem;
     margin-left: 1rem;
     margin-right: 0; */
-    width:140.5px;
-    font-size:10px;
+    width: 140.5px;
+    font-size: 10px;
   }
 
 

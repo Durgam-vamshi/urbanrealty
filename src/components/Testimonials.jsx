@@ -40,7 +40,7 @@ function Testimonials() {
           {reviews.map((item, index) => (
             <div className="testimonial-card" key={index}>
               <div className="quote-icon">❝</div>
-              <h3>{item.quote}</h3>
+              <h3 className="Testimonals-heading">{item.quote}</h3>
               <p className="testimonial-text">{item.text}</p>
               <div className="testimonial-footer">
                 <div

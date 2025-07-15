@@ -18,20 +18,28 @@ body {
   flex-direction: column;
 }
 
+
+.Unlock tag {
+  font-family: "Geist Mono", "Geist Mono Fallback" !important;
+}
+
+
 .hero-heading {
   font-size: 1rem;
   font-weight: 300;
-
+  font-family: 'Cormorant', serif;
   line-height: 1.3;
   text-align: center;
 }
 
 @media (max-width: 768px) {
   .hero-heading {
+    font-family: 'Cormorant', serif;
     font-size: 1.8rem;
     word-spacing: 4px;
     line-height: 1.2;
     text-align: center;
+    text-transform: capitalize !important;
   }
 }
 
@@ -158,6 +166,7 @@ body {
 .form-card h2 {
   margin-bottom: 20px;
   text-align: center;
+  font-family: "Geist Mono", "Geist Mono Fallback" !important;
 }
 
 .form-group {
@@ -284,8 +293,9 @@ body {
   gap: 20px;
   margin-top: 20px;
 }
-.img-fluid1{
-  display:block;
+
+.img-fluid1 {
+  display: block;
 }
 
 
@@ -300,10 +310,11 @@ body {
     height: 20px;
   }
 }
-@media(min-width:567px){
-  .img-fluid1{
-  display:none;
-}
+
+@media(min-width:567px) {
+  .img-fluid1 {
+    display: none;
+  }
 }
 
 .partner-left,
@@ -318,7 +329,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 0;
-  padding:6px;
+  padding: 6px;
 
 }
 
@@ -334,20 +345,22 @@ body {
   display: block;
   margin-left: 0;
   margin-right: auto;
-  padding:10px;
-  border-radius:5px;
-  font-size:15px;
-  width:242px;
-  height:60px;
-  text-align:center;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 242px;
+  height: 60px;
+  text-align: center;
 
 }
-@media(max-width:530px){
+
+@media(max-width:530px) {
+
   .partner-left,
-.partner-right{
-  heigth:10px;
-  width:80px;
-}
+  .partner-right {
+    heigth: 10px;
+    width: 80px;
+  }
 }
 
 
@@ -356,4 +369,3 @@ body {
   flex-wrap: wrap;
   text-align: center;
 }
-

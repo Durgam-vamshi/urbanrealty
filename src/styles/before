@@ -1,0 +1,253 @@
+:root {
+  --amenitiesbg: #08232A;
+}
+
+.amenities-section {
+  background-color: var(--amenitiesbg);
+  padding:60px 0px;
+  color: #fff;
+}
+
+.amenities-title {
+  font-size: 8px;
+  background-color: #0A2C35;
+  border-radius: 5px;
+  width: 113px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.amenities-heading {
+  font-family: 'Cormorant', serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #CD9C40;
+  text-align: start;
+  line-height: 1.4;
+  width: 100%;
+  max-width: 280px;
+}
+
+.amenities-category {
+  color: #eee;
+  text-align: start;
+}
+
+.category-title {
+  font-size: 13px;
+  color: #4C98AB;
+  margin-bottom: 6px;
+}
+
+.category-list {
+  list-style: disc;
+  padding-left: 18px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  background-size: 60% 60%;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.swiper-amenities {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperamenities {
+  width: 100%;
+  max-width: 400px;
+}
+
+
+
+
+.swiper-amenities {
+  overflow: hidden;
+}
+
+.swiperamenities {
+  width: 225.385px;
+  margin-right: 10px;
+}
+
+
+
+
+.swiper-slide{
+  width:200px !important;
+}
+.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom:1px!important;
+  
+
+
+}
+
+.swiper-pagination-bullet {
+  width:5px;
+  height: 1px;
+  background: #fff;
+  opacity: 0.5;
+  margin: 0 4px !important;
+  transition: all 0.3s ease;
+}
+.swiper-pagination{
+  padding-top:20px !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ffcc00;
+}
+.swiper{
+  width:110% !important;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .amenities-heading {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .category-title {
+    font-size: 12px;
+  }
+
+  .category-list {
+    font-size: 11px;
+  }
+
+  .amenities-title {
+    font-size: 7px;
+    width: 100px;
+    height: 20px;
+  }
+
+  .carousel-indicators {
+    margin-top: 1rem;
+  }
+}
+
+
+
+
+
+
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "../styles/AmenitiesSection.css";
+
+function AmenitiesSection() {
+  const images = [
+    "https://urbanranch.irarealty.in/_next/static/media/c1mv.0fb2d028.webp",
+    "https://urbanranch.irarealty.in/_next/static/media/c1mv.0fb2d028.webp",
+    "https://urbanranch.irarealty.in/_next/static/media/c1mv.0fb2d028.webp",
+  ];
+
+  return (
+    <section className="amenities-section text-white">
+      <div className="container px-3 ">
+        <div className=" mt-2 mb-5  gap-4">
+          {/* Left Column */}
+          <div
+            className="p-4"
+            style={{
+         
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              justifyContent: "center",
+              borderRadius: "12px",
+            }}
+          >
+            <span className="amenities-title mb-3">
+              Community & Amenities
+            </span>
+            <h2 className="amenities-heading fw-bold mb-4">
+              A Lifestyle that Breathes <br /> and Belongs
+            </h2>
+
+            <div className="amenities-category mb-3">
+              <h5 className="category-title mb-2">
+                Social & Community Spaces
+              </h5>
+              <ul className="category-list ps-3">
+                <li>Grand Clubhouse, Banquet Hall, Guest Suites</li>
+                <li>Party Lawns, Amphitheater, Café‑style seating</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Right Column: Swiper Slider */}
+          <div
+            style={{
+             
+              maxWidth: "100%",
+              width: "100%",
+              height: "100%",
+            }}
+          >
+            <Swiper
+              modules={[Pagination]}
+              spaceBetween={10}
+              slidesPerView={2.5}
+              centeredSlides={true}
+              loop={true}
+              loopAdditionalSlides={images.length}
+              pagination={{ clickable: true }}
+              className="swiper-amenities"
+              style={{ borderRadius: "12px" }}
+            >
+              {images.map((src, index) => (
+                <SwiperSlide
+                  key={index}
+                  className="d-flex justify-content-center align-items-center swiperamenities w-100"
+                >
+                  <img
+                    src={src}
+                    alt={`Amenity Slide ${index + 1}`}
+                    className=" img-fluid "
+                    style={{
+                      height: "170px",
+                      width:"250px",
+                      objectFit:"scale-down"
+                   
+                    }}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default AmenitiesSection;

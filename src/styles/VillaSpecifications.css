@@ -3,6 +3,10 @@
     padding: 3rem 0;
 }
 
+.villa-title-sub{
+font-family: Cormorant,serif !important;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -30,7 +34,6 @@
 .section-label {
     font-size: 14px;
     color: #c7a969;
-    text-transform: uppercase;
     margin-bottom: 1rem;
     text-align: left;
     border-radius: 6px;
@@ -88,10 +91,13 @@
     font-size: 14px;
     margin: 0;
     color: #333;
+    font-weight: 100;
+    font-family: sans-serif !important;
 }
 
 .spec-value {
     font-size: 15px;
+    font-family: sans-serif !important;
     margin: 0;
     font-weight: 500;
     color: #CD9c40;
@@ -140,9 +146,10 @@
 }
 
 .section-label {
-    font-size: 14px;
+    font-size: 60%;
+    word-spacing: 1px;
     color: #c7a969;
-    text-transform: uppercase;
+    font-family: sans-serif, "poppins";
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
     background-color: #ffffff;
@@ -152,13 +159,12 @@
     margin-left: 0;
 }
 
+
 .villa-title,
 .villa-desc {
     margin-left: 0;
     padding-left: 0;
 }
-
-
 
 
 
@@ -170,9 +176,16 @@
     .villa-desc {
         display: none;
     }
+    .section-label{
+    font-family: 'Nunito Sans',sans-serif !important;
+}
 }
 
 @media (max-width: 576px) {
+
+    .section-label{
+    font-family: 'Nunito Sans',sans-serif !important;
+}
     .specs-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
@@ -232,16 +245,23 @@
 
 
 
+
+
+
 .villa-title .desktop-line {
     display: inline;
 }
 
 @media (max-width: 758px) {
+
+    .section-label{
+    font-family: 'Nunito Sans',sans-serif !important;
+}
     .villa-title {
         font-size: 18px;
         line-height: 0.8;
-    word-spacing: 3px; 
-    margin-bottom: 1.5rem 
+        word-spacing: 3px;
+        margin-bottom: 1.5rem
     }
 
     .villa-title .desktop-line {

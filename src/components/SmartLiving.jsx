@@ -82,15 +82,6 @@ const SmartLiving = () => {
                             </div>
                         </div>
                         <div className="w-full-lg-7-12">
-                            {/* <img
-                                alt="Smart Living"
-                                loading="lazy"
-                                width="722"
-                                height="619"
-                                decoding="async"
-                                className="img-fluid rounded shadow w-full"
-                                src={mainImage}
-                            /> */}
                             <img
                                 alt="Smart Living"
                                 loading="lazy"

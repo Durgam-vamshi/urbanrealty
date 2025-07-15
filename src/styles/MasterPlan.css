@@ -114,6 +114,7 @@
 .Heading {
   font-size: 1.5rem;
   font-weight: bold;
+  font-family: 'Cormorant', serif;
   color: #333;
 }
 
@@ -123,18 +124,19 @@
 
 .legend-container {
   border-radius: 10px;
-  background-color:#ffffff;
-  
-  font-family:san-serif !important;
-  
+  background-color: #ffffff;
+  font-family: san-serif !important;
 }
 
 
 .legend-item {
-  padding-left:20px;
-  font-size: 10px;
-  width:130px;
-  text-align:start;
+  padding-left: 20px;
+  font-size: 5%;
+  width: 130px;
+  font-weight: 510;
+  /* font-family: sans-serif; */
+  font-family: 'Geist', "Geist Fallback";
+  text-align: start;
   color: #333;
 }
 
@@ -144,13 +146,13 @@
 }
 
 .download-button-container {
-  margin-left:  0px;
+  margin-left: 0px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-right: 0 !important;
-  text-align:start;
-  margin-top:10px;
+  text-align: start;
+  margin-top: 10px;
 }
 
 .download-button {
@@ -161,6 +163,7 @@
   border-radius: 5px;
   font-size: 14px;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -183,12 +186,14 @@
   font-size: 16px;
   font-weight: 600;
   width: 100%;
+  font-family: 'Poppins', sans-serif;
   max-width: 300px;
   justify-content: center;
 }
 
 /* Mobile Styles */
 @media (max-width: 991px) {
+
   .col-lg-7,
   .col-lg-5 {
     flex: 0 0 100%;
@@ -222,8 +227,9 @@
     width: 100%;
     font-size: 15px;
   }
-  .download-button{
-    display:none;
+
+  .download-button {
+    display: none;
   }
 }
 
@@ -240,7 +246,6 @@
 
   .legend-container {
     flex-grow: 1;
-    /* Removed max-height and overflow-y so full list shows */
     padding-right: 10px;
   }
 
@@ -254,22 +259,81 @@
   }
 }
 
-@media(max-width:550px){
-  .master-plan-con{
-    display:flex;
-    flex-direction:column;
+@media(max-width:550px) {
+  .master-plan-con {
+    display: flex;
+    flex-direction: column;
   }
-  .download-button-larger{
-      background-color: #28a745;
-  color: white;
-  border: none;
-  padding: 10px 10px;
-  border-radius: 5px;
-  width:150px;
-  font-size: 10px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .download-button-larger {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+
+/* 13 july */
+@media (min-width: 992px) {
+  .col-lg-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+
+  .download-button-container {
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .download-button.large {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .master-plan-wrapper .d-flex.flex-lg-row {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .legend-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    height: 100%;
+    width: 80%;
+    max-width: 320px;
+  }
+
+  .legend-heading {
+    font-weight: 510 !important;
+  }
+
+  .legend-item {
+    font-size: 12px;
+    color: #333;
+  }
+
+  .col-lg-5 {
+    padding-left: 0px;
+  }
+
+  .master-plan-wrapper {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding-left: 5vw;
+    padding-right: 5vw;
+    box-sizing: border-box;
   }
 }

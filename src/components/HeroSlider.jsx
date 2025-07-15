@@ -50,7 +50,7 @@ function HeroSlider() {
           </div>
         </div>
         <div className="form-card">
-          <h2>Unlock Early Access</h2>
+          <h2 className="Unlock tag">Unlock Early Access</h2>
           <form>
             <div className="form-group">
               <input type="text" placeholder="Name" />

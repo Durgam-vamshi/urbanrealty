@@ -1,7 +1,12 @@
 .about-section {
   padding: 60px 20px;
   background-color: #ffffff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+span {
+  font-family: 'Nunito Sans', sans-serif;
+  ;
 }
 
 .about-container {
@@ -13,6 +18,12 @@
   gap: 12px;
   flex-wrap: wrap;
 }
+
+
+.Location-Ira {
+  font-weight: bold;
+}
+
 
 .about-images {
   display: grid;
@@ -46,10 +57,6 @@
   border-radius: 12px;
 }
 
-
-
-
-
 .about-images img.third {
   grid-column: span 2;
   height: 180px;
@@ -64,22 +71,33 @@
 .about-tag {
   display: inline-block;
   background-color: #f3f1f6;
+  font-family: 'Nunito Sans', sans-serif !important;
+  font-weight: bold;
   color: #d47c2f;
+  /* font-weight: 470; */
   font-size: 13px;
   padding: 5px 12px;
   border-radius: 6px;
   margin-bottom: 10px;
 }
 
+
+.landmark-heading {
+  font-family: 'Nunito Sans', sans- !important;
+}
+
+
 .about-title {
-  font-size: 30px;
-  font-weight: 600;
+  font-family: 'Cormorant', serif;
+  font-size: 35px;
+  font-weight: 800;
   color: #1b2a41;
   margin-bottom: 16px;
 }
 
 .about-desc {
   font-size: 15px;
+  font-family: 'Nunito Sans', sans-serif;
   color: #555;
   margin-bottom: 24px;
   line-height: 1.6;
@@ -117,87 +135,8 @@
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .about-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .about-images {
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    max-width: 100%;
-  }
-
-  .about-images img {
-    height: 200px;
-  }
-
-  .about-images img.third {
-    grid-column: auto;
-  }
-
-  .about-content {
-    text-align: center;
-    max-width: 100%;
-  }
-
-  .about-title {
-    font-size: 26px;
-  }
-
-  .about-desc {
-    font-size: 14px;
-  }
-
-  .about-projects {
-    text-align: left;
-  }
-
-  .project-list {
-    align-items: center;
-  }
-
-  .project-item {
-    justify-content: center;
-    font-size: 14px;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .about-section {
-    padding: 40px 15px;
-    /* Reduce padding for smaller screens */
-  }
-
-  .about-title {
-    font-size: 22px;
-    /* Further reduce title font size */
-  }
-
-  .project-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .project-item {
-    flex-direction: column;
-    /* Stack icon and text vertically within each item */
-    text-align: center;
-    gap: 5px;
-    flex: 1 1 auto;
-    /* Allow items to grow and shrink, and take up auto width */
-    min-width: 120px;
-    /* Ensure a minimum width for each item */
-    max-width: 150px;
-    /* Optional: Set a max width if desired */
-  }
-
-  .project-icon-wrapper {
-    margin-bottom: 5px;
-    /* Add some space below the icon */
+    flex-direction: column-reverse;
   }
 }

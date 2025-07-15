@@ -62,6 +62,7 @@ function ContactUs() {
               </label>
             </div>
 
+
             <div className="btn-group">
               <button
                 type="submit"
@@ -80,6 +81,7 @@ function ContactUs() {
                 Download Floor Plans
               </button>
             </div>
+
           </form>
         </div>
       </div>

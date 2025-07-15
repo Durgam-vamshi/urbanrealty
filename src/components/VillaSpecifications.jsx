@@ -8,12 +8,11 @@ function VillaSpecifications() {
                 <div className="villa-specs-wrapper">
                     <div className="villa-specs-left">
                         <h4 className="section-label">Villa Specifications</h4>
-                        {/* <h2 className="villa-title">Designed for Comfort, 
-                        Built with Intention</h2> */}
+                   
                         <h2 className="villa-title">
-                            <span className="title-line desktop-line">Designed for Comfort, Built</span>
+                            <span className="title-line villa-title-sub desktop-line">Designed for Comfort, Built</span>
                             <br className="desktop-line" />
-                            <span className="title-line">with Intention</span>
+                            <span className="title-line villa-title-sub">with Intention</span>
                         </h2>
 
                         <p className="villa-desc">

@@ -4,7 +4,7 @@ import "../styles/AboutIraReality.css";
 function AboutIraRealty() {
     return (
         <section className="about-section">
-            
+
             <div className="about-container">
 
                 <div className="about-images">
@@ -21,7 +21,7 @@ function AboutIraRealty() {
                     </p>
 
                     <div className="about-projects">
-                        <h4>Our Landmark Projects:</h4>
+                        <h4 className="landmark-heading">Our Landmark Projects:</h4>
                         <div className="project-list">
 
                             <div className="project-item">
@@ -35,7 +35,9 @@ function AboutIraRealty() {
                                         </g>
                                     </svg>
                                 </div>
-                                <span>IRA The Square Villas — Kongarakalan</span>
+                                <span>
+
+                                    <span className='Location-Ira'>IRA The Square Villas</span> — Kongarakalan</span>
                             </div>
 
                             <div className="project-item">
@@ -49,7 +51,9 @@ function AboutIraRealty() {
                                         </g>
                                     </svg>
                                 </div>
-                                <span>Moonglade Apartments — Narsingi</span>
+                                <span>
+                                    <span className='Location-Ira'>Moonglade Apartments</span>
+                                    — Narsingi</span>
                             </div>
 
                             <div className="project-item">
@@ -63,7 +67,13 @@ function AboutIraRealty() {
                                         </g>
                                     </svg>
                                 </div>
-                                <span>IRA Elevate Villas — Shamshabad</span>
+                                <span>
+                                    <span className='Location-Ira'>IRA Elevate Villas</span>
+                                    {/* IRA Elevate Villas
+                                 */}
+                                    — Shamshabad</span>
+
+
                             </div>
 
                         </div>

@@ -1,5 +1,6 @@
 :root {
   --amenitiesbg: #000;
+
 }
 
 .contact-section {
@@ -39,13 +40,14 @@
 .contactus-title {
   color: #cd9c40;
   font-size: 32px;
+  font-family: 'Cormorant', serif;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .contactus-sub {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Nunito Sans', sans-serif !important;
   margin-bottom: 30px;
   color: #ccc;
 }
@@ -112,10 +114,10 @@
   cursor: pointer;
   font-size: 15px;
   transition: all 0.3s ease;
-  margin: 0 auto; */
-  margin:0 1vw;
+  margin: 0 auto;
+  margin: 0 1vw;
   display: block;
-} 
+}
 
 .contactus-btn.primary {
   background-color: #d1a450;
@@ -170,17 +172,16 @@
   }
 }
 
-
 .show-mobile,
 .show-desktop {
   display: none;
 }
 
+
 @media screen and (max-width: 700px) {
   .show-mobile {
     display: inline-block !important;
-        width:37vw;      
-
+    width: 50vw;
   }
 }
 
@@ -191,8 +192,6 @@
 }
 
 
-
-/* Hide the native checkbox */
 .contactus-checkbox {
   position: absolute;
   opacity: 0;
@@ -236,5 +235,3 @@
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
-
-
