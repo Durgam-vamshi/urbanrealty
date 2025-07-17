@@ -4,11 +4,12 @@ import '../styles/VillaSpecifications.css';
 function VillaSpecifications() {
     return (
         <section className="villa-specs-section" id="villa-specs">
+
             <div className="container">
                 <div className="villa-specs-wrapper">
                     <div className="villa-specs-left">
                         <h4 className="section-label">Villa Specifications</h4>
-                   
+
                         <h2 className="villa-title">
                             <span className="title-line villa-title-sub desktop-line">Designed for Comfort, Built</span>
                             <br className="desktop-line" />
@@ -68,7 +69,7 @@ function VillaSpecifications() {
                                         alt={`${item.label} icon`}
                                         className="spec-icon"
                                     />
-                                    <div>
+                                    <div className="spec-item">
                                         <h6 className="spec-title">{item.label}</h6>
                                         <p className="spec-value">{item.value}</p>
                                     </div>
@@ -86,6 +87,8 @@ function VillaSpecifications() {
                     </div>
                 </div>
             </div>
+
+
         </section>
     );
 }

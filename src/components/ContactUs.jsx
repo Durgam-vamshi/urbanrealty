@@ -9,6 +9,7 @@ function ContactUs() {
           <img
             src="https://urbanranch.irarealty.in/_next/static/media/c6.a2cd09fc.webp"
             alt="Contact Visual"
+            className="contact-img"
           />
         </div>
 
@@ -81,6 +82,8 @@ function ContactUs() {
                 Download Floor Plans
               </button>
             </div>
+
+
 
           </form>
         </div>

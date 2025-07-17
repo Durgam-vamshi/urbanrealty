@@ -49,9 +49,3 @@ export default function App() {
     </div>
   );
 }
-
-// import CommunityAmenities from "./components/CommunityAmenities";
-// <AmenitiesSection />
-{
-  /* <CommunityAmenities /> */
-}

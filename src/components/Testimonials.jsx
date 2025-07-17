@@ -43,15 +43,13 @@ function Testimonials() {
               <h3 className="Testimonals-heading">{item.quote}</h3>
               <p className="testimonial-text">{item.text}</p>
               <div className="testimonial-footer">
-                <div
-                  className="avatar"
-                  style={{ backgroundColor: item.bgColor }}
-                >
+                <div className="avatar"
+                  style={{ backgroundColor: item.bgColor }}>
                   {item.initials}
                 </div>
                 <div className="user-info">
                   <strong>{item.name}</strong>
-                  <p>{item.role}</p>
+                  <p className="item-role">{item.role}</p>
                 </div>
               </div>
             </div>

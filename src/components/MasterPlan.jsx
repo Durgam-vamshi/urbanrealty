@@ -11,7 +11,7 @@ function MasterPlan() {
               <h3 className="mb-3  Heading">Master Plan</h3>
 
               <div className="download-button-container d-none d-lg-flex">
-                <button className="download-button large">Download Brochure</button>
+                <button className="download-button large desktop-large">Download Brochure</button>
               </div>
 
               <div className="d-flex align-items-center justify-content-center">

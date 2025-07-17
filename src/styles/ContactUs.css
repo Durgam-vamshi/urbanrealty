@@ -1,6 +1,5 @@
 :root {
   --amenitiesbg: #000;
-
 }
 
 .contact-section {
@@ -9,23 +8,31 @@
   padding: 60px 20px;
 }
 
+
+.checkmark {
+  font-size: 12px !important;
+}
+
+
 .contact-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  gap: 40px;
+  gap: 15px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .contact-image {
-  flex: 1 1 400px;
+  /* flex: 1 1 400px;
+   */
+  flex: 1 1 350px;
   display: block;
 }
 
 .contact-image img {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
@@ -39,14 +46,15 @@
 
 .contactus-title {
   color: #cd9c40;
-  font-size: 32px;
+  font-size: 3rem;
   font-family: 'Cormorant', serif;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .contactus-sub {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 22px;
   font-family: 'Nunito Sans', sans-serif !important;
   margin-bottom: 30px;
   color: #ccc;
@@ -79,7 +87,7 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 14px;
+  font-size: 12px;
   color: #aaa;
   margin-top: 10px;
 }
@@ -148,6 +156,13 @@
 .half-width-mobile,
 .full-width-mobile {
   width: auto;
+}
+
+
+@media (max-width:768px) {
+  .checkmark {
+    font-size: 8px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -234,4 +249,23 @@
   border: solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+
+@media (max-width: 1026px) {
+  .contactus-title {
+    font-size: 24px;
+  }
+
+  .contactus-sub {
+    font-size: 14px;
+  }
+}
+
+
+.contact-image {
+  flex: 1 1 450px;
+}
+
+.contact-container {
+  flex: 1 1 480px;
 }

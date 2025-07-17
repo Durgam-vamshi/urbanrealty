@@ -3,8 +3,8 @@
     padding: 3rem 0;
 }
 
-.villa-title-sub{
-font-family: Cormorant,serif !important;
+.villa-title-sub {
+    font-family: Cormorant, serif !important;
 }
 
 .container {
@@ -16,7 +16,10 @@ font-family: Cormorant,serif !important;
 .villa-specs-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+    padding-right: 1.5rem;
+    max-width: 100vw;
+    margin: 0 auto;
 }
 
 @media (min-width: 992px) {
@@ -24,6 +27,10 @@ font-family: Cormorant,serif !important;
         flex-direction: row;
         justify-content: space-between;
         align-items: start;
+    }
+    .villa-title{
+        font-size:24px !important;
+        margin-bottom:32px;
     }
 }
 
@@ -44,7 +51,7 @@ font-family: Cormorant,serif !important;
 }
 
 .villa-title {
-    font-size: 28px;
+    font-size: 48px !important;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #062937;
@@ -52,14 +59,13 @@ font-family: Cormorant,serif !important;
     text-align: left;
     font-size: 24px;
     width: 100%;
-    letter-spacing: 0.5px;
-    word-spacing: 4px;
+    word-spacing: 1px;
 
 }
 
 .villa-desc {
-    font-size: 16px;
-    color: #333;
+    font-size: 20px;
+    color: #73788c;
     margin-bottom: 2rem;
 }
 
@@ -72,13 +78,14 @@ font-family: Cormorant,serif !important;
 .spec-card {
     display: flex;
     align-items: center;
-    padding: 12px 16px;
+    padding: 12px 16px 19px 10px;
     border-radius: 20px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
     gap: 16px;
     border: 1px solid #ccc;
-    max-width: 300px;
     width: 100%;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .spec-icon {
@@ -88,18 +95,20 @@ font-family: Cormorant,serif !important;
 }
 
 .spec-title {
-    font-size: 14px;
+    font-size: 19px;
     margin: 0;
     color: #333;
-    font-weight: 100;
+    font-weight: 500 !important;
+    margin-bottom: 8px;
     font-family: sans-serif !important;
 }
 
 .spec-value {
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: 100%;
     font-family: sans-serif !important;
     margin: 0;
-    font-weight: 500;
+    font-weight: 500 !important;
     color: #CD9c40;
 }
 
@@ -125,6 +134,7 @@ font-family: Cormorant,serif !important;
     }
 }
 
+
 .villa-specs-right {
     flex: 0 0 40%;
     display: flex;
@@ -145,8 +155,11 @@ font-family: Cormorant,serif !important;
     padding-left: 1rem;
 }
 
+
+
 .section-label {
-    font-size: 60%;
+    font-weight: lighter;
+    font-size: 95%;
     word-spacing: 1px;
     color: #c7a969;
     font-family: sans-serif, "poppins";
@@ -176,22 +189,34 @@ font-family: Cormorant,serif !important;
     .villa-desc {
         display: none;
     }
-    .section-label{
-    font-family: 'Nunito Sans',sans-serif !important;
-}
+
+    .section-label {
+        font-family: 'Nunito Sans', sans-serif !important;
+    }
+
+    .villa-title{
+        font-size:24px;
+        margin-bottom:32px;
+    }
+
 }
 
 @media (max-width: 576px) {
 
-    .section-label{
-    font-family: 'Nunito Sans',sans-serif !important;
-}
+    .section-label {
+        font-family: 'Nunito Sans', sans-serif !important;
+    }
+
     .specs-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
+        /* gap: 0.5rem; */
+        gap: 0;
         padding: 0;
+        gap: 12px;
         justify-items: center;
     }
+
+
 
     .spec-card {
         padding: 6px 10px;
@@ -207,7 +232,8 @@ font-family: Cormorant,serif !important;
     }
 
     .spec-title {
-        font-size: 11px;
+        font-size: 12px;
+        margin-bottom: 5px;
     }
 
     .spec-value {
@@ -215,8 +241,9 @@ font-family: Cormorant,serif !important;
     }
 
     .villa-title {
-        font-size: 18px;
+        font-size: 18px !important;
         line-height: 1.3;
+        margin-bottom: 24px !important;
     }
 
     .villa-desc {
@@ -232,10 +259,10 @@ font-family: Cormorant,serif !important;
 
     .villa-image {
         width: 80vw;
-        height: 65vh;
+        height: 45vh;
         max-width: unset;
         margin-left: -5vw;
-        border-radius: 10px rounded !important;
+        border-radius: 9px !important;
     }
 
     .villa-specs-right {
@@ -244,21 +271,18 @@ font-family: Cormorant,serif !important;
 }
 
 
-
-
-
-
 .villa-title .desktop-line {
     display: inline;
 }
 
 @media (max-width: 758px) {
 
-    .section-label{
-    font-family: 'Nunito Sans',sans-serif !important;
-}
+    .section-label {
+        font-family: 'Nunito Sans', sans-serif !important;
+    }
+
     .villa-title {
-        font-size: 18px;
+        font-size: 18px !important;
         line-height: 0.8;
         word-spacing: 3px;
         margin-bottom: 1.5rem
@@ -276,4 +300,26 @@ font-family: Cormorant,serif !important;
     .villa-title .title-line:first-child::after {
         content: "";
     }
+}
+
+
+@media(max-width:1024px){
+    .villa-title{
+    font-size:36px !important;
+}
+}
+
+@media(max-width:1400px){
+    .villa-title{
+        font-size:36px !important;
+    }
+}
+
+
+
+/* Show on medium and larger screens */
+@media screen and (min-width: 768px) {
+  .desktop-line {
+    display: inline;
+  }
 }

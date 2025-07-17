@@ -36,7 +36,8 @@
   color: var(--gold);
   margin-bottom: 2rem;
   padding-left: 0.75rem;
-  font-size: 1.75rem;
+  /* font-size: 1.75rem; */
+  font-size:48px;
   text-align: left;
   font-family: 'Cormorant', serif;
 }
@@ -204,3 +205,11 @@
   }
 }
 
+
+
+@media(max-width:768px){
+  .gallery-title{
+    font-size:24px;
+    color:white !important;
+  }
+}

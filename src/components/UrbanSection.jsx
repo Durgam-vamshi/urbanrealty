@@ -17,7 +17,6 @@ function UrbanRanchSection() {
               Welcome to IRA Urban Ranch — Set in Kongarakalan, near Adibatla, this 17-acre gated villa community is crafted for families seeking luxury, privacy, and soul-deep connection.
             </p>
           </div>
-
           <div className="image-wrapper">
             <img
               src="https://urbanranch.irarealty.in/_next/static/media/c3.f3268189.webp"
@@ -26,7 +25,6 @@ function UrbanRanchSection() {
             />
           </div>
         </div>
-
       </div>
     </div>
   );

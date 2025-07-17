@@ -1,6 +1,7 @@
 import React from 'react';
-
 import "../styles/SmartLiving.css"
+
+
 const fanIcon = "https://urbanranch.irarealty.in/_next/static/media/fan.6aac0760.png";
 const smartLockIcon = "https://urbanranch.irarealty.in/_next/static/media/smartlock.e2618a50.png"
 const voiceAssistantIcon = "https://urbanranch.irarealty.in/_next/static/media/voice_assistant.7ed72c06.png";
@@ -79,6 +80,7 @@ const SmartLiving = () => {
                                         Future-Ready Automation <br /> Wiring Throughout
                                     </p>
                                 </div>
+
                             </div>
                         </div>
                         <div className="w-full-lg-7-12">

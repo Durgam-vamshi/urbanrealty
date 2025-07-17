@@ -54,7 +54,7 @@
 
   .fp-heading {
     font-family: 'Cormorant', serif !important;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #000 !important;
@@ -168,6 +168,14 @@
     white-space: nowrap;
     margin-top: 30px;
     line-height: 1;
+  }
+}
+
+
+
+@media(min-width:1400px) {
+  .fp-heading {
+    font-size: 36px;
   }
 }
 
@@ -334,5 +342,16 @@
 
   .builtuparea span {
     font-weight: 300;
+  }
+}
+
+@media (min-width:1200px) {
+  .fp-heading {
+    font-size: 2rem !important;
+  }
+
+  .fp-heading {
+    height: 20% !important;
+    line-height: none !important;
   }
 }
